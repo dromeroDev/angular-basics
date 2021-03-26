@@ -1,0 +1,13 @@
+.card {
+  width: 70%;
+}
+
+.card-body {
+  img {
+    max-height: 300px;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+}
