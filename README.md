@@ -1,4 +1,4 @@
-# Introdution
+# Introduction
 En este proyecto se hace incapie a distintas caracteristicas básicas de Angular. El objetivo es tener disponible un proyecto de ejemplo para tener de referencia al momento de querer construir alguna caracteristica puntual. Entre las caracteristicas que se desarrollaron estan:
 
 ## Binding Interpolation and Data Binding
