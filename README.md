@@ -1,27 +1,36 @@
-# Plural
+# Introdution
+En este proyecto se hace incapie a distintas caracteristicas básicas de Angular. El objetivo es tener disponible un proyecto de ejemplo para tener de referencia al momento de querer construir alguna caracteristica puntual. Entre las caracteristicas que se desarrollaron estan:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+## Binding Interpolation and Data Binding
+Se agregan ejemplos de como obtener el valor de propiedades del componente desde la vista, mediante un evento de la vista ejecutar un metodo del componente y doble binding con el uso de la directiva ngModel.
 
-## Development server
+## Directives
+Se emplea el uso de distintas directivas provistas por Angular como: ngIf, ngFor, etc..
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Pipes
+Se utilizan pipes propios de Angular y se creo un pipe personalizado para tranformar algunos datos.
 
-## Code scaffolding
+## Defining Interfaces
+Se empleo el uso fuerte de tipado, para ello se crean interfaces para tipar los objetos y evitar el uso de "any".
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getter and Setters
+Para las propiedades que queremos encapsular, se utilizan getters and setters para acceder al valor de esas propiedades privadas.
 
-## Build
+## Nested Components
+Se creo un componente para visualiar el rating en estrellas de los productos y se agrega al componente que muestra el listado de productos. Ademas, se agrega la logica para pasar data desde el componente hijo al componente padre y viceversa (@Input() / @Output())
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Services and Dependecy Injection
+Mediante el uso de servicios, se muestra el funcionamiento de la inyeccion de dependencias en un componente y el concepto de instancia Singleton. En el servicio, se utiliza HTTP request con el uso de Observables y por ende, las suscripciones y desuscripciones de los componentes a dicho observable. 
 
-## Running unit tests
+## Routing 
+Se utiliza un ruteo básico entre modulos, con manejo de rutas para distintos componentes y rutas hijas para los componentes de submodulos. Ademas, se muestra como enviar un parametro data por medio de la ruta.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Guard
+Se agrego un guard para validar el correcto acceso a uno de los componentes.
 
-## Running end-to-end tests
+## Modules
+Con el objetivo de desacoplar el modulo root (AppModule), se modulariza la aplicación. De esta manera, se abstraen las responsabilidades de cada modulo. Se hace foco en el correcto uso de los imports, declarators y exports.  
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
